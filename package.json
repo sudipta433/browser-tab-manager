@@ -2,6 +2,7 @@
   "name": "browser-tab-manager",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://sudipta433.github.io/browser-tab-manager/",
   "type": "module",
   "scripts": {
     "dev": "vite",
