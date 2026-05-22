@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import TabItem from './TabItem';
-import { getAllTabs, closeTab, switchToTab } from '../utils/chromeAPI';
+import { getAllTabs, closeTab, switchToTab, isChromeExtension } from '../utils/chromeAPI';
 
-const TabList = ({ searchQuery, viewMode }) => {
+const TabList = ({ searchQuery }) => {
   const [tabs, setTabs] = useState([]);
 
   useEffect(() => {
@@ -19,9 +19,9 @@ const TabList = ({ searchQuery, viewMode }) => {
     setTabs(tabs.filter(tab => tab.id !== tabId));
   };
 
-  const handleSwitchTab = async (tabId) => {
-    await switchToTab(tabId);
-    window.close(); // Close popup after switching
+  const handleSwitchTab = async (tab) => {
+    await switchToTab(tab.id, tab.url);
+    if (isChromeExtension()) window.close();
   };
 
   const filteredTabs = tabs.filter(tab => 

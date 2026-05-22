@@ -2,7 +2,11 @@ import React from 'react';
 
 const TabItem = ({ tab, onClose, onSwitch }) => {
   const getFavicon = (tab) => {
-    return tab.favIconUrl || `https://www.google.com/s2/favicons?domain=${new URL(tab.url).hostname}`;
+    try {
+      return tab.favIconUrl || `https://www.google.com/s2/favicons?domain=${new URL(tab.url).hostname}`;
+    } catch {
+      return tab.favIconUrl || '';
+    }
   };
 
   const truncateText = (text, maxLength) => {
@@ -13,7 +17,7 @@ const TabItem = ({ tab, onClose, onSwitch }) => {
     <div className="flex items-center justify-between p-3 hover:bg-gray-50 border-b border-gray-100 group">
       <div 
         className="flex items-center gap-3 flex-1 cursor-pointer"
-        onClick={() => onSwitch(tab.id)}
+        onClick={() => onSwitch(tab)}
       >
         <img 
           src={getFavicon(tab)} 

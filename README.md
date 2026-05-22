@@ -1,4 +1,4 @@
-# 🗂️ Tab Manager Pro
+# Tab Manager Pro
 
 A modern, feature-rich Chrome extension built with React and Tailwind CSS to help you organize, save, and manage browser tabs efficiently.
 
@@ -6,6 +6,8 @@ A modern, feature-rich Chrome extension built with React and Tailwind CSS to hel
 ![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)
 ![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css)
+
+[Open extension preview](https://sudipta433.github.io/browser-tab-manager/)
 
 ## ✨ Features
 
@@ -39,8 +41,8 @@ Save current browsing sessions and restore them later.
 
 1. **Clone the repository**
 ```
-git clone https://github.com/yourusername/tab-manager-pro.git
-cd tab-manager-pro
+git clone https://github.com/sudipta433/browser-tab-manager.git
+cd browser-tab-manager
 ```
 
 
@@ -108,4 +110,3 @@ This creates a `dist` folder with the production-ready extension files.
 3. **Delete a Session**:
    - Click the trash icon next to any session
    - Session will be removed permanently
-

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getAllTabs, saveSession, getSessions, restoreSession, deleteSession } from '../utils/chromeAPI';
+import { getAllTabs, saveSession, getSessions, restoreSession, deleteSession, isChromeExtension } from '../utils/chromeAPI';
 
 const SessionManager = () => {
   const [sessions, setSessions] = useState([]);
@@ -26,7 +26,7 @@ const SessionManager = () => {
 
   const handleRestoreSession = (session) => {
     restoreSession(session);
-    window.close();
+    if (isChromeExtension()) window.close();
   };
 
   const handleDeleteSession = async (sessionId) => {
