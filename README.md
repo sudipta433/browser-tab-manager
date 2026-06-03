@@ -1,11 +1,10 @@
+
 # Tab Manager Pro
 
 A modern, feature-rich Chrome extension built with React and Tailwind CSS to help you organize, save, and manage browser tabs efficiently.
 
-![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-green?style=for-the-badge&logo=googlechrome)
-![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)
-![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css)
+## 🌐 Live Demo
+Check out the live UI preview here: [Tab Manager Pro Live Preview](https://browser-tab-manager-teal.vercel.app)
 
 [Open extension preview](https://sudipta433.github.io/browser-tab-manager/)
 
